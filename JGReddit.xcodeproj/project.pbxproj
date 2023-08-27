@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C91AF97C2A9AFC9400E9AE8D /* AppStartupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AF97B2A9AFC9400E9AE8D /* AppStartupViewModel.swift */; };
 		C91AF97E2A9AFDE500E9AE8D /* StartupLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AF97D2A9AFDE500E9AE8D /* StartupLoadingView.swift */; };
+		C94EE5542A9BDF9C00374C64 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94EE5532A9BDF9C00374C64 /* MainView.swift */; };
 		C972D8BE2A9AA39200482D59 /* JGRedditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C972D8BD2A9AA39200482D59 /* JGRedditApp.swift */; };
 		C972D8C02A9AA39200482D59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C972D8BF2A9AA39200482D59 /* ContentView.swift */; };
 		C972D8C22A9AA39300482D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C972D8C12A9AA39300482D59 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		C91AF97B2A9AFC9400E9AE8D /* AppStartupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartupViewModel.swift; sourceTree = "<group>"; };
 		C91AF97D2A9AFDE500E9AE8D /* StartupLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupLoadingView.swift; sourceTree = "<group>"; };
+		C94EE5532A9BDF9C00374C64 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C972D8BA2A9AA39200482D59 /* JGReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C972D8BD2A9AA39200482D59 /* JGRedditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGRedditApp.swift; sourceTree = "<group>"; };
 		C972D8BF2A9AA39200482D59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C972D8BF2A9AA39200482D59 /* ContentView.swift */,
+				C94EE5532A9BDF9C00374C64 /* MainView.swift */,
 				C91AF97D2A9AFDE500E9AE8D /* StartupLoadingView.swift */,
 			);
 			path = Views;
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C972D8C02A9AA39200482D59 /* ContentView.swift in Sources */,
+				C94EE5542A9BDF9C00374C64 /* MainView.swift in Sources */,
 				C9F867882A9AAA5300B250EB /* Credential.swift in Sources */,
 				C91AF97C2A9AFC9400E9AE8D /* AppStartupViewModel.swift in Sources */,
 				C972D8BE2A9AA39200482D59 /* JGRedditApp.swift in Sources */,

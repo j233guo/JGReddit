@@ -8,19 +8,17 @@
 import Foundation
 
 class AppStartupViewModel: ObservableObject {
-    @Published var isLoading = true
+    @Published var isLoading = false
     @Published var accessTokenFailed = false
 
     func getAccessToken() {
-        NetworkManager.shared.obtainAccessToken() { success in
-            if success {
+        isLoading = true
+        NetworkManager.shared.obtainAccessToken() { [weak self] success in
+            DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
                 DispatchQueue.main.async {
+                    guard let self = self else { return } // Ensure self is still valid
                     self.isLoading = false
-                }
-            } else {
-                DispatchQueue.main.async {
-                    self.isLoading = false
-                    self.accessTokenFailed = true
+                    self.accessTokenFailed = !success
                 }
             }
         }

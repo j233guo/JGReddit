@@ -12,6 +12,8 @@ enum StartupStatus {
 }
 
 struct StartupView: View {
+    @EnvironmentObject private var startupViewModel: AppStartupViewModel
+    
     let status: StartupStatus
     
     var body: some View {
@@ -25,9 +27,10 @@ struct StartupView: View {
                     .foregroundColor(.secondary)
                     .padding(.top)
             }
+            .padding()
         } else {
             VStack {
-                Image(systemName: "display.trianglebadge.exclamationmark")
+                Image(systemName: "exclamationmark.circle")
                     .scaleEffect(3)
                     .foregroundColor(.red)
                     .frame(width: 75, height: 75)
@@ -35,7 +38,19 @@ struct StartupView: View {
                     .font(.headline)
                     .foregroundColor(.secondary)
                     .padding(.top)
+                Text("Please check Internet connection and credentials")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding(.horizontal)
+                Button {
+                    startupViewModel.getAccessToken()
+                } label: {
+                    Label("Retry", systemImage: "arrow.counterclockwise")
+                }
+                .buttonStyle(.bordered)
+                .padding(.top)
             }
+            .padding()
         }
     }
 }
@@ -43,6 +58,8 @@ struct StartupView: View {
 struct StartupLoadingView_Previews: PreviewProvider {
     static var previews: some View {
         StartupView(status: .loading)
+            .environmentObject(AppStartupViewModel())
         StartupView(status: .failed)
+            .environmentObject(AppStartupViewModel())
     }
 }
