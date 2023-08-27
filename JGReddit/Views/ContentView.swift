@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = AppStartupViewModel()
+    
     var body: some View {
-        VStack {
-            Button("check access") {
-                let result = NetworkManager.shared.obtainAccessToken()
-                print(result)
+        if viewModel.isLoading {
+            StartupView(status: .loading)
+                .onAppear {
+                    viewModel.getAccessToken()
+                }
+        } else {
+            if viewModel.accessTokenFailed {
+                Text("Failed to obtain access token.")
+            } else {
+                Text("Hello world")
             }
         }
-        .padding()
     }
 }
 

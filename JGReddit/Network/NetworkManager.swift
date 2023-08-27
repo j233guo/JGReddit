@@ -34,11 +34,10 @@ extension NetworkManager {
         !accessToken.isEmpty
     }
     
-    func obtainAccessToken() -> Bool {
-        var success = true
+    func obtainAccessToken(completion: @escaping (Bool) -> Void) {
         let authData = "\(clientId):\(secretKey)".data(using: .utf8)
         guard let authValue = authData?.base64EncodedString() else {
-            return false
+            return
         }
         self.header["Authorization"] = "Basic \(authValue)"
         let parameters: [String: String] = [
@@ -58,11 +57,13 @@ extension NetworkManager {
                 if self.checkAccessToken() {
                     self.baseUrl = "https://oauth.reddit.com/"
                     self.header["Authorization"] = "bearer \(self.accessToken)"
+                    completion(true)
+                } else {
+                    completion(false)
                 }
             case .failure:
-                success = false
+                completion(false)
             }
         }
-        return success
     }
 }
