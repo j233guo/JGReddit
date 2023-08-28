@@ -9,7 +9,12 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("try load post") {
+            let payload = PostParameter(subreddit: "all", listingOption: "top", limit: 25, before: "", after: "")
+            APIManager.shared.getPosts(payload: payload) { posts in
+                print(posts)
+            }
+        }
     }
 }
 
