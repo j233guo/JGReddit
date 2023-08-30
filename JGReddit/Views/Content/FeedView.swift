@@ -22,11 +22,7 @@ struct FeedView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(postlist, id: \.id) { post in
-                    Text(post.title ?? "")
-                }
-            }
+            PostListView(posts: postlist)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("try load") {
