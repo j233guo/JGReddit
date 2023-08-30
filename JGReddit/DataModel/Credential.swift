@@ -1,5 +1,5 @@
 //
-//  ModelData.swift
+//  Credential.swift
 //  JGReddit
 //
 //  Created by Jiaming Guo on 2023-08-26.
@@ -24,11 +24,11 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-struct Credentials: Codable {
+struct Credential: Codable {
     let clientId: String
     let secretKey: String
     let username: String
     let password: String
 }
 
-let credentials: Credentials = load("credentials.json")
+let credential: Credential = load("credentials.json")

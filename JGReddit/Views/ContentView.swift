@@ -8,19 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var startupViewModel: AppStartupViewModel
+    @State private var initScreen = true
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if initScreen {
+            Button {
+                initScreen = false
+                startupViewModel.getAccessToken()
+            } label: {
+                Label("Get Access Token", systemImage: "person.badge.key.fill")
+            }
+            .buttonStyle(.borderedProminent)
+        } else {
+            if startupViewModel.isLoading {
+                StartupView(status: .loading)
+            } else {
+                if startupViewModel.accessTokenFailed {
+                    StartupView(status: .failed)
+                } else {
+                    MainView()
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AppStartupViewModel())
     }
 }

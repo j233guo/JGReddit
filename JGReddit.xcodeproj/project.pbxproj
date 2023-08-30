@@ -7,24 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91AF97C2A9AFC9400E9AE8D /* AppStartupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AF97B2A9AFC9400E9AE8D /* AppStartupViewModel.swift */; };
+		C91AF97E2A9AFDE500E9AE8D /* StartupLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91AF97D2A9AFDE500E9AE8D /* StartupLoadingView.swift */; };
+		C94EE5542A9BDF9C00374C64 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94EE5532A9BDF9C00374C64 /* MainView.swift */; };
+		C94EE5562A9BEB2700374C64 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94EE5552A9BEB2700374C64 /* Post.swift */; };
+		C94EE5582A9BF1A100374C64 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94EE5572A9BF1A100374C64 /* APIManager.swift */; };
+		C957819A2A9EC4200042B14D /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95781992A9EC4200042B14D /* PostCellView.swift */; };
+		C957819C2A9ECB310042B14D /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C957819B2A9ECB310042B14D /* PostListView.swift */; };
 		C972D8BE2A9AA39200482D59 /* JGRedditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C972D8BD2A9AA39200482D59 /* JGRedditApp.swift */; };
 		C972D8C02A9AA39200482D59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C972D8BF2A9AA39200482D59 /* ContentView.swift */; };
 		C972D8C22A9AA39300482D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C972D8C12A9AA39300482D59 /* Assets.xcassets */; };
 		C972D8C52A9AA39300482D59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C972D8C42A9AA39300482D59 /* Preview Assets.xcassets */; };
-		C9F867832A9AA92D00B250EB /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F867822A9AA92D00B250EB /* Network.swift */; };
-		C9F867882A9AAA5300B250EB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F867872A9AAA5300B250EB /* ModelData.swift */; };
+		C981A8AC2A9D76D4003C9135 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C981A8AB2A9D76D4003C9135 /* FeedView.swift */; };
+		C9CAC0A02A9DA63B0057FDAF /* SubredditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAC09F2A9DA63B0057FDAF /* SubredditView.swift */; };
+		C9F867832A9AA92D00B250EB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F867822A9AA92D00B250EB /* NetworkManager.swift */; };
+		C9F867882A9AAA5300B250EB /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F867872A9AAA5300B250EB /* Credential.swift */; };
+		C9F867902A9AB2C200B250EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C9F8678F2A9AB2C200B250EB /* Alamofire */; };
+		C9F867922A9ACEC200B250EB /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F867912A9ACEC200B250EB /* AccessToken.swift */; };
+		C9F867932A9AD33600B250EB /* credentials.json in Resources */ = {isa = PBXBuildFile; fileRef = C9F8678D2A9AAC0500B250EB /* credentials.json */; };
+		C9F867942A9AD33B00B250EB /* credentialsTemplate.json in Resources */ = {isa = PBXBuildFile; fileRef = C9F8678C2A9AAB9100B250EB /* credentialsTemplate.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C91AF97B2A9AFC9400E9AE8D /* AppStartupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartupViewModel.swift; sourceTree = "<group>"; };
+		C91AF97D2A9AFDE500E9AE8D /* StartupLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupLoadingView.swift; sourceTree = "<group>"; };
+		C94EE5532A9BDF9C00374C64 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C94EE5552A9BEB2700374C64 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C94EE5572A9BF1A100374C64 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C95781992A9EC4200042B14D /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
+		C957819B2A9ECB310042B14D /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		C972D8BA2A9AA39200482D59 /* JGReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C972D8BD2A9AA39200482D59 /* JGRedditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGRedditApp.swift; sourceTree = "<group>"; };
 		C972D8BF2A9AA39200482D59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C972D8C12A9AA39300482D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C972D8C42A9AA39300482D59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C9F867822A9AA92D00B250EB /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		C9F867872A9AAA5300B250EB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		C981A8AB2A9D76D4003C9135 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		C9CAC09F2A9DA63B0057FDAF /* SubredditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditView.swift; sourceTree = "<group>"; };
+		C9F867822A9AA92D00B250EB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C9F867872A9AAA5300B250EB /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		C9F8678C2A9AAB9100B250EB /* credentialsTemplate.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = credentialsTemplate.json; sourceTree = "<group>"; };
 		C9F8678D2A9AAC0500B250EB /* credentials.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = credentials.json; sourceTree = "<group>"; };
+		C9F867912A9ACEC200B250EB /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,12 +55,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F867902A9AB2C200B250EB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91AF97A2A9AFC4B00E9AE8D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C91AF97B2A9AFC9400E9AE8D /* AppStartupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C95781982A9EC4160042B14D /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				C95781992A9EC4200042B14D /* PostCellView.swift */,
+				C957819B2A9ECB310042B14D /* PostListView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		C972D8B12A9AA39200482D59 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +98,7 @@
 		C972D8BC2A9AA39200482D59 /* JGReddit */ = {
 			isa = PBXGroup;
 			children = (
+				C91AF97A2A9AFC4B00E9AE8D /* ViewModel */,
 				C9F8678B2A9AAB7200B250EB /* Resources */,
 				C9F867842A9AAA3400B250EB /* DataModel */,
 				C9F867812A9AA8F300B250EB /* Network */,
@@ -76,10 +118,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C9AF53A42A9D754D00074212 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				C95781982A9EC4160042B14D /* Post */,
+				C981A8AB2A9D76D4003C9135 /* FeedView.swift */,
+				C9CAC09F2A9DA63B0057FDAF /* SubredditView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		C9F867802A9AA8ED00B250EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C9AF53A42A9D754D00074212 /* Content */,
 				C972D8BF2A9AA39200482D59 /* ContentView.swift */,
+				C94EE5532A9BDF9C00374C64 /* MainView.swift */,
+				C91AF97D2A9AFDE500E9AE8D /* StartupLoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,7 +142,8 @@
 		C9F867812A9AA8F300B250EB /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C9F867822A9AA92D00B250EB /* Network.swift */,
+				C9F867822A9AA92D00B250EB /* NetworkManager.swift */,
+				C94EE5572A9BF1A100374C64 /* APIManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -95,7 +151,9 @@
 		C9F867842A9AAA3400B250EB /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				C9F867872A9AAA5300B250EB /* ModelData.swift */,
+				C9F867872A9AAA5300B250EB /* Credential.swift */,
+				C9F867912A9ACEC200B250EB /* AccessToken.swift */,
+				C94EE5552A9BEB2700374C64 /* Post.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -125,6 +183,9 @@
 			dependencies = (
 			);
 			name = JGReddit;
+			packageProductDependencies = (
+				C9F8678F2A9AB2C200B250EB /* Alamofire */,
+			);
 			productName = JGReddit;
 			productReference = C972D8BA2A9AA39200482D59 /* JGReddit.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +214,9 @@
 				Base,
 			);
 			mainGroup = C972D8B12A9AA39200482D59;
+			packageReferences = (
+				C9F8678E2A9AB2C200B250EB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C972D8BB2A9AA39200482D59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,7 +231,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F867932A9AD33600B250EB /* credentials.json in Resources */,
 				C972D8C52A9AA39300482D59 /* Preview Assets.xcassets in Resources */,
+				C9F867942A9AD33B00B250EB /* credentialsTemplate.json in Resources */,
 				C972D8C22A9AA39300482D59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,9 +246,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C972D8C02A9AA39200482D59 /* ContentView.swift in Sources */,
-				C9F867882A9AAA5300B250EB /* ModelData.swift in Sources */,
+				C94EE5542A9BDF9C00374C64 /* MainView.swift in Sources */,
+				C957819A2A9EC4200042B14D /* PostCellView.swift in Sources */,
+				C94EE5582A9BF1A100374C64 /* APIManager.swift in Sources */,
+				C981A8AC2A9D76D4003C9135 /* FeedView.swift in Sources */,
+				C9F867882A9AAA5300B250EB /* Credential.swift in Sources */,
+				C91AF97C2A9AFC9400E9AE8D /* AppStartupViewModel.swift in Sources */,
 				C972D8BE2A9AA39200482D59 /* JGRedditApp.swift in Sources */,
-				C9F867832A9AA92D00B250EB /* Network.swift in Sources */,
+				C9CAC0A02A9DA63B0057FDAF /* SubredditView.swift in Sources */,
+				C9F867832A9AA92D00B250EB /* NetworkManager.swift in Sources */,
+				C94EE5562A9BEB2700374C64 /* Post.swift in Sources */,
+				C91AF97E2A9AFDE500E9AE8D /* StartupLoadingView.swift in Sources */,
+				C9F867922A9ACEC200B250EB /* AccessToken.swift in Sources */,
+				C957819C2A9ECB310042B14D /* PostListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +457,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9F8678E2A9AB2C200B250EB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9F8678F2A9AB2C200B250EB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9F8678E2A9AB2C200B250EB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C972D8B22A9AA39200482D59 /* Project object */;
 }
