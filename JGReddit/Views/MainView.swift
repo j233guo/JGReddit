@@ -9,12 +9,19 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Button("try load post") {
-            let payload = PostParameter(subreddit: "all", listingOption: "top", limit: 25, before: "", after: "")
-            APIManager.shared.getPosts(payload: payload) { posts in
-                print(posts)
+        NavigationView {
+            TabView {
+                FeedView()
+                    .tabItem {
+                        Label("Feeds", systemImage: "newspaper")
+                    }
+                SubredditView()
+                    .tabItem {
+                        Label("Communities", systemImage: "star.bubble")
+                    }
             }
         }
+        
     }
 }
 
