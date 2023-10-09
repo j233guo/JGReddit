@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject private var startupViewModel: AppStartupViewModel
+    @ObservedObject var startupViewModel: AppStartupViewModel
     @State private var initScreen = true
     
     var body: some View {
@@ -36,7 +36,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(AppStartupViewModel())
+        ContentView(startupViewModel: AppStartupViewModel())
     }
 }

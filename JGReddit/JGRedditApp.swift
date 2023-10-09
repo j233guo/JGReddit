@@ -13,8 +13,7 @@ struct JGRedditApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(startupViewModel)
+            ContentView(startupViewModel: startupViewModel)
         }
     }
 }
